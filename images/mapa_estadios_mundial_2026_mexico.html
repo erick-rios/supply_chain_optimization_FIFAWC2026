@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a69c552d295fa40a5b307d8e65503399 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a69c552d295fa40a5b307d8e65503399" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a69c552d295fa40a5b307d8e65503399 = L.map(
+                "map_a69c552d295fa40a5b307d8e65503399",
+                {
+                    center: [23.6345, -102.5528],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7bdbc6fb829e1e2fe3a9edaf1782ec5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e7bdbc6fb829e1e2fe3a9edaf1782ec5.addTo(map_a69c552d295fa40a5b307d8e65503399);
+        
+    
+            var marker_b68181250100adc870fe1f3fce6d618a = L.marker(
+                [19.3029, -99.1506],
+                {}
+            ).addTo(map_a69c552d295fa40a5b307d8e65503399);
+        
+    
+            var icon_934b63909328adb6680d852b106729bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b68181250100adc870fe1f3fce6d618a.setIcon(icon_934b63909328adb6680d852b106729bb);
+        
+    
+        var popup_1b1053df9f137db9468ae88214d116fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a090dfc81c99165679ca1eb9b15b3043 = $(`<div id="html_a090dfc81c99165679ca1eb9b15b3043" style="width: 100.0%; height: 100.0%;">Estadio Azteca (CDMX)</div>`)[0];
+                popup_1b1053df9f137db9468ae88214d116fc.setContent(html_a090dfc81c99165679ca1eb9b15b3043);
+            
+        
+
+        marker_b68181250100adc870fe1f3fce6d618a.bindPopup(popup_1b1053df9f137db9468ae88214d116fc)
+        ;
+
+        
+    
+    
+            var marker_5e912031a3fdfd9ddca592e3657ab279 = L.marker(
+                [20.6755, -103.462],
+                {}
+            ).addTo(map_a69c552d295fa40a5b307d8e65503399);
+        
+    
+            var icon_a81a744297efc7bec784e38f8b53c66a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e912031a3fdfd9ddca592e3657ab279.setIcon(icon_a81a744297efc7bec784e38f8b53c66a);
+        
+    
+        var popup_de54355c644a0ae819f3658869470439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7be2e5f14899c52e6bb72de7901d293 = $(`<div id="html_b7be2e5f14899c52e6bb72de7901d293" style="width: 100.0%; height: 100.0%;">Estadio Akron (Guadalajara)</div>`)[0];
+                popup_de54355c644a0ae819f3658869470439.setContent(html_b7be2e5f14899c52e6bb72de7901d293);
+            
+        
+
+        marker_5e912031a3fdfd9ddca592e3657ab279.bindPopup(popup_de54355c644a0ae819f3658869470439)
+        ;
+
+        
+    
+    
+            var marker_28ba68c3b77c1cb0f17cdca3ac64b188 = L.marker(
+                [25.6687, -100.3116],
+                {}
+            ).addTo(map_a69c552d295fa40a5b307d8e65503399);
+        
+    
+            var icon_81ae9b122d1b8b16b0b3610483a6de27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ba68c3b77c1cb0f17cdca3ac64b188.setIcon(icon_81ae9b122d1b8b16b0b3610483a6de27);
+        
+    
+        var popup_da3f079e574196c5e65dadef3e2d7413 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3efab4c05d9d3c40ef3c046266aaf44a = $(`<div id="html_3efab4c05d9d3c40ef3c046266aaf44a" style="width: 100.0%; height: 100.0%;">Estadio BBVA (Monterrey)</div>`)[0];
+                popup_da3f079e574196c5e65dadef3e2d7413.setContent(html_3efab4c05d9d3c40ef3c046266aaf44a);
+            
+        
+
+        marker_28ba68c3b77c1cb0f17cdca3ac64b188.bindPopup(popup_da3f079e574196c5e65dadef3e2d7413)
+        ;
+
+        
+    
+</script>
+</html>
