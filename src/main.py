@@ -1,8 +1,8 @@
-!pip install pyomo
-!apt install glpk-utils libglpk-dev
-!pip install glpk
+#!pip install pyomo
+#!apt install glpk-utils libglpk-dev
+#!pip install glpk
 
-!glpsol --version
+#!glpsol --version
 
 # main.py
 from src.network_model import SupplyNetwork
