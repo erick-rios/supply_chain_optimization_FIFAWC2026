@@ -1,1 +1,562 @@
-[ {"Name": "BBVA", "Latitude": 25.6689, "Longitude": -100.3105, "Neighbors": ["Distribuidora6", "Distribuidora12", "Distribuidora15"], "Cost": [20, 40, 35]}, {"Name": "Azteca", "Latitude": 19.3029, "Longitude": -99.1505, "Neighbors": ["Distribuidora20", "Distribuidora25", "Distribuidora30"], "Cost": [25, 45, 30]}, {"Name": "Planta1", "Latitude": 21.8818, "Longitude": -102.2916, "Neighbors": ["Distribuidora1", "Distribuidora2", "Distribuidora3"], "Cost": [10, 5, 8]}, {"Name": "Planta2", "Latitude": 25.4232, "Longitude": -101.0, "Neighbors": ["Distribuidora4", "Distribuidora5", "Distribuidora6"], "Cost": [12, 10, 15]}, {"Name": "Planta3", "Latitude": 19.7002, "Longitude": -101.1844, "Neighbors": ["Distribuidora7", "Distribuidora8", "Distribuidora9"], "Cost": [8, 12, 9]}, {"Name": "Planta4", "Latitude": 17.7831, "Longitude": -97.5044, "Neighbors": ["Distribuidora10", "Distribuidora11", "Distribuidora12"], "Cost": [14, 6, 9]}, {"Name": "Planta5", "Latitude": 24.0092, "Longitude": -104.6664, "Neighbors": ["Distribuidora13", "Distribuidora14", "Distribuidora15"], "Cost": [20, 25, 18]}, {"Name": "Planta6", "Latitude": 22.1461, "Longitude": -100.9764, "Neighbors": ["Distribuidora16", "Distribuidora17", "Distribuidora18"], "Cost": [15, 17, 10]}, {"Name": "Planta7", "Latitude": 20.5895, "Longitude": -100.3899, "Neighbors": ["Distribuidora19", "Distribuidora20", "Distribuidora21"], "Cost": [12, 7, 11]}, {"Name": "Planta8", "Latitude": 18.6813, "Longitude": -97.1515, "Neighbors": ["Distribuidora22", "Distribuidora23", "Distribuidora24"], "Cost": [10, 8, 6]}, {"Name": "Planta9", "Latitude": 20.5597, "Longitude": -100.3792, "Neighbors": ["Distribuidora25", "Distribuidora26", "Distribuidora27"], "Cost": [13, 14, 12]}, {"Name": "Planta10", "Latitude": 19.4332, "Longitude": -99.1332, "Neighbors": ["Distribuidora28", "Distribuidora29", "Distribuidora30"], "Cost": [11, 20, 9]}, {"Name": "Distribuidora1", "Latitude": 21.1518, "Longitude": -101.7116, "Neighbors": ["Akron", "Planta1", "Distribuidora2"], "Cost": [15, 10, 5]}, {"Name": "Distribuidora2", "Latitude": 22.7709, "Longitude": -102.5832, "Neighbors": ["Planta1", "Distribuidora1", "Distribuidora3"], "Cost": [5, 10, 7]}, {"Name": "Distribuidora3", "Latitude": 20.5895, "Longitude": -100.3899, "Neighbors": ["Planta1", "Distribuidora2", "Distribuidora4"], "Cost": [8, 7, 6]}, {"Name": "Distribuidora4", "Latitude": 24.1422, "Longitude": -101.2078, "Neighbors": ["Planta2", "Distribuidora3", "Distribuidora5"], "Cost": [10, 6, 4]}, {"Name": "Distribuidora5", "Latitude": 22.2371, "Longitude": -97.8419, "Neighbors": ["Akron", "Planta2", "Distribuidora6"], "Cost": [30, 12, 9]}, {"Name": "Distribuidora6", "Latitude": 25.1003, "Longitude": -100.3166, "Neighbors": ["BBVA", "Planta2", "Distribuidora5"], "Cost": [20, 15, 9]}, {"Name": "Distribuidora7", "Latitude": 20.9575, "Longitude": -89.6222, "Neighbors": ["Planta3", "Distribuidora8", "Distribuidora9"], "Cost": [8, 7, 5]}, {"Name": "Distribuidora8", "Latitude": 18.6575, "Longitude": -91.8301, "Neighbors": ["Planta3", "Distribuidora7", "Distribuidora9"], "Cost": [12, 8, 6]}, {"Name": "Distribuidora9", "Latitude": 19.9032, "Longitude": -98.9553, "Neighbors": ["Planta3", "Distribuidora7", "Distribuidora8"], "Cost": [9, 5, 6]}{"Name": "Akron", "Latitude": 20.6758, "Longitude": -103.4443, "Neighbors": ["Distribuidora1", "Distribuidora5", "Distribuidora10"], "Cost": [15, 30, 25]},]
+[
+    {
+      "Name": "BBVA",
+      "Latitude": 25.6689,
+      "Longitude": -100.3105,
+      "Neighbors": [
+        "Distribuidora6",
+        "Distribuidora12",
+        "Distribuidora15"
+      ],
+      "Cost": [
+        20,
+        40,
+        35
+      ]
+    },
+    {
+      "Name": "Azteca",
+      "Latitude": 19.3029,
+      "Longitude": -99.1505,
+      "Neighbors": [
+        "Distribuidora20",
+        "Distribuidora25",
+        "Distribuidora30"
+      ],
+      "Cost": [
+        25,
+        45,
+        30
+      ]
+    },
+    {
+      "Name": "Planta1",
+      "Latitude": 21.8818,
+      "Longitude": -102.2916,
+      "Neighbors": [
+        "Distribuidora1",
+        "Distribuidora2",
+        "Distribuidora3"
+      ],
+      "Cost": [
+        10,
+        5,
+        8
+      ]
+    },
+    {
+      "Name": "Planta2",
+      "Latitude": 25.4232,
+      "Longitude": -101,
+      "Neighbors": [
+        "Distribuidora4",
+        "Distribuidora5",
+        "Distribuidora6"
+      ],
+      "Cost": [
+        12,
+        10,
+        15
+      ]
+    },
+    {
+      "Name": "Planta3",
+      "Latitude": 19.7002,
+      "Longitude": -101.1844,
+      "Neighbors": [
+        "Distribuidora7",
+        "Distribuidora8",
+        "Distribuidora9"
+      ],
+      "Cost": [
+        8,
+        12,
+        9
+      ]
+    },
+    {
+      "Name": "Planta4",
+      "Latitude": 17.7831,
+      "Longitude": -97.5044,
+      "Neighbors": [
+        "Distribuidora10",
+        "Distribuidora11",
+        "Distribuidora12"
+      ],
+      "Cost": [
+        14,
+        6,
+        9
+      ]
+    },
+    {
+      "Name": "Planta5",
+      "Latitude": 24.0092,
+      "Longitude": -104.6664,
+      "Neighbors": [
+        "Distribuidora13",
+        "Distribuidora14",
+        "Distribuidora15"
+      ],
+      "Cost": [
+        20,
+        25,
+        18
+      ]
+    },
+    {
+      "Name": "Planta6",
+      "Latitude": 22.1461,
+      "Longitude": -100.9764,
+      "Neighbors": [
+        "Distribuidora16",
+        "Distribuidora17",
+        "Distribuidora18"
+      ],
+      "Cost": [
+        15,
+        17,
+        10
+      ]
+    },
+    {
+      "Name": "Planta7",
+      "Latitude": 20.5895,
+      "Longitude": -100.3899,
+      "Neighbors": [
+        "Distribuidora19",
+        "Distribuidora20",
+        "Distribuidora21"
+      ],
+      "Cost": [
+        12,
+        7,
+        11
+      ]
+    },
+    {
+      "Name": "Planta8",
+      "Latitude": 18.6813,
+      "Longitude": -97.1515,
+      "Neighbors": [
+        "Distribuidora22",
+        "Distribuidora23",
+        "Distribuidora24"
+      ],
+      "Cost": [
+        10,
+        8,
+        6
+      ]
+    },
+    {
+      "Name": "Planta9",
+      "Latitude": 20.5597,
+      "Longitude": -100.3792,
+      "Neighbors": [
+        "Distribuidora25",
+        "Distribuidora26",
+        "Distribuidora27"
+      ],
+      "Cost": [
+        13,
+        14,
+        12
+      ]
+    },
+    {
+      "Name": "Planta10",
+      "Latitude": 19.4332,
+      "Longitude": -99.1332,
+      "Neighbors": [
+        "Distribuidora28",
+        "Distribuidora29",
+        "Distribuidora30"
+      ],
+      "Cost": [
+        11,
+        20,
+        9
+      ]
+    },
+    {
+      "Name": "Distribuidora1",
+      "Latitude": 21.1518,
+      "Longitude": -101.7116,
+      "Neighbors": [
+        "Akron",
+        "Planta1",
+        "Distribuidora2"
+      ],
+      "Cost": [
+        15,
+        10,
+        5
+      ]
+    },
+    {
+      "Name": "Distribuidora2",
+      "Latitude": 22.7709,
+      "Longitude": -102.5832,
+      "Neighbors": [
+        "Planta1",
+        "Distribuidora1",
+        "Distribuidora3"
+      ],
+      "Cost": [
+        5,
+        10,
+        7
+      ]
+    },
+    {
+      "Name": "Distribuidora3",
+      "Latitude": 20.5895,
+      "Longitude": -100.3899,
+      "Neighbors": [
+        "Planta1",
+        "Distribuidora2",
+        "Distribuidora4"
+      ],
+      "Cost": [
+        8,
+        7,
+        6
+      ]
+    },
+    {
+      "Name": "Distribuidora4",
+      "Latitude": 24.1422,
+      "Longitude": -101.2078,
+      "Neighbors": [
+        "Planta2",
+        "Distribuidora3",
+        "Distribuidora5"
+      ],
+      "Cost": [
+        10,
+        6,
+        4
+      ]
+    },
+    {
+      "Name": "Distribuidora5",
+      "Latitude": 22.2371,
+      "Longitude": -97.8419,
+      "Neighbors": [
+        "Akron",
+        "Planta2",
+        "Distribuidora6"
+      ],
+      "Cost": [
+        30,
+        12,
+        9
+      ]
+    },
+    {
+      "Name": "Distribuidora6",
+      "Latitude": 25.1003,
+      "Longitude": -100.3166,
+      "Neighbors": [
+        "BBVA",
+        "Planta2",
+        "Distribuidora5"
+      ],
+      "Cost": [
+        20,
+        15,
+        9
+      ]
+    },
+    {
+      "Name": "Distribuidora7",
+      "Latitude": 20.9575,
+      "Longitude": -89.6222,
+      "Neighbors": [
+        "Planta3",
+        "Distribuidora8",
+        "Distribuidora9"
+      ],
+      "Cost": [
+        8,
+        7,
+        5
+      ]
+    },
+    {
+      "Name": "Distribuidora8",
+      "Latitude": 18.6575,
+      "Longitude": -91.8301,
+      "Neighbors": [
+        "Planta3",
+        "Distribuidora7",
+        "Distribuidora9"
+      ],
+      "Cost": [
+        12,
+        8,
+        6
+      ]
+    },
+    {
+      "Name": "Distribuidora9",
+      "Latitude": 19.9032,
+      "Longitude": -98.9553,
+      "Neighbors": [
+        "Planta3",
+        "Distribuidora7",
+        "Distribuidora8"
+      ],
+      "Cost": [
+        9,
+        5,
+        6
+      ]
+    },
+    {
+      "Name": "Akron",
+      "Latitude": 20.6758,
+      "Longitude": -103.4443,
+      "Neighbors": [
+        "Distribuidora1",
+        "Distribuidora5",
+        "Distribuidora10"
+      ],
+      "Cost": [
+        15,
+        30,
+        25
+      ]
+    },
+    {
+      "Name": "Distribuidora10",
+      "Latitude": 29.4486,
+      "Longitude": -90.5424,
+      "Neighbors": [
+        "Planta1",
+        "Planta9",
+        "Distribuidora16"
+      ],
+      "Cost": [
+        17,
+        29,
+        18
+      ]
+    },
+    {
+      "Name": "Distribuidora11",
+      "Latitude": 23.2013,
+      "Longitude": -109.9238,
+      "Neighbors": [
+        "Planta10",
+        "Distribuidora9"
+      ],
+      "Cost": [
+        18,
+        45
+      ]
+    },
+    {
+      "Name": "Distribuidora13",
+      "Latitude": 20.4497,
+      "Longitude": -116.1433,
+      "Neighbors": [
+        "Distribuidora14",
+        "Planta9",
+        "Distribuidora2"
+      ],
+      "Cost": [
+        26,
+        41,
+        8
+      ]
+    },
+    {
+      "Name": "Distribuidora14",
+      "Latitude": 14.8976,
+      "Longitude": -86.9146,
+      "Neighbors": [
+        "Distribuidora25",
+        "Planta8",
+        "Azteca",
+        "Planta2"
+      ],
+      "Cost": [
+        33,
+        24,
+        37,
+        38
+      ]
+    },
+    {
+      "Name": "Distribuidora16",
+      "Latitude": 25.6464,
+      "Longitude": -106.7358,
+      "Neighbors": [
+        "Planta4",
+        "Distribuidora30",
+        "Distribuidora4"
+      ],
+      "Cost": [
+        32,
+        7,
+        20
+      ]
+    },
+    {
+      "Name": "Distribuidora17",
+      "Latitude": 14.9498,
+      "Longitude": -99.9679,
+      "Neighbors": [
+        "Distribuidora12",
+        "Distribuidora24"
+      ],
+      "Cost": [
+        32,
+        12
+      ]
+    },
+    {
+      "Name": "Distribuidora18",
+      "Latitude": 26.899,
+      "Longitude": -100.1077,
+      "Neighbors": [
+        "Distribuidora20",
+        "Distribuidora5",
+        "Distribuidora21",
+        "Distribuidora11"
+      ],
+      "Cost": [
+        33,
+        29,
+        30,
+        34
+      ]
+    },
+    {
+      "Name": "Distribuidora19",
+      "Latitude": 20.9135,
+      "Longitude": -108.5086,
+      "Neighbors": [
+        "Planta4",
+        "Distribuidora2"
+      ],
+      "Cost": [
+        34,
+        14
+      ]
+    },
+    {
+      "Name": "Distribuidora21",
+      "Latitude": 31.9433,
+      "Longitude": -106.008,
+      "Neighbors": [
+        "Distribuidora10",
+        "Distribuidora18"
+      ],
+      "Cost": [
+        34,
+        41
+      ]
+    },
+    {
+      "Name": "Distribuidora22",
+      "Latitude": 17.2398,
+      "Longitude": -86.349,
+      "Neighbors": [
+        "Planta5",
+        "Akron"
+      ],
+      "Cost": [
+        49,
+        30
+      ]
+    },
+    {
+      "Name": "Distribuidora23",
+      "Latitude": 26.935,
+      "Longitude": -97.6238,
+      "Neighbors": [
+        "Distribuidora5",
+        "Distribuidora21"
+      ],
+      "Cost": [
+        31,
+        25
+      ]
+    },
+    {
+      "Name": "Distribuidora24",
+      "Latitude": 17.8798,
+      "Longitude": -114.6238,
+      "Neighbors": [
+        "Azteca",
+        "Distribuidora5"
+      ],
+      "Cost": [
+        35,
+        18
+      ]
+    },
+    {
+      "Name": "Distribuidora26",
+      "Latitude": 15.1839,
+      "Longitude": -105.1237,
+      "Neighbors": [
+        "Distribuidora3",
+        "BBVA"
+      ],
+      "Cost": [
+        37,
+        32
+      ]
+    },
+    {
+      "Name": "Distribuidora27",
+      "Latitude": 29.5632,
+      "Longitude": -116.1603,
+      "Neighbors": [
+        "BBVA",
+        "Planta6"
+      ],
+      "Cost": [
+        25,
+        46
+      ]
+    },
+    {
+      "Name": "Distribuidora28",
+      "Latitude": 31.8205,
+      "Longitude": -102.3552,
+      "Neighbors": [
+        "Planta3",
+        "Distribuidora29",
+        "Distribuidora6",
+        "Distribuidora10"
+      ],
+      "Cost": [
+        44,
+        11,
+        38,
+        40
+      ]
+    },
+    {
+      "Name": "Distribuidora29",
+      "Latitude": 15.4571,
+      "Longitude": -101.5471,
+      "Neighbors": [
+        "Distribuidora27",
+        "Azteca",
+        "Distribuidora12",
+        "Planta3"
+      ],
+      "Cost": [
+        49,
+        39,
+        42,
+        49
+      ]
+    }
+  ]

@@ -5,6 +5,7 @@ class MapVisualizer:
     def __init__(self, file_path):
         self.file_path = file_path
         self.places = []
+        self.connections = set()  # Para rastrear las conexiones ya trazadas
 
     def load_data(self):
         """Carga los datos del archivo JSON y los guarda en la lista de lugares."""
@@ -52,26 +53,35 @@ class MapVisualizer:
         # Añadir líneas y etiquetas para cada conexión
         for place in self.places:
             for neighbor, cost in place["connections"]:
+                # Verificar si el vecino existe en la lista
                 neighbor_place = next((p for p in self.places if p["name"] == neighbor), None)
                 if neighbor_place:
-                    # Coordenadas para la línea entre el nodo y su vecino
-                    start = [place["latitude"], place["longitude"]]
-                    end = [neighbor_place["latitude"], neighbor_place["longitude"]]
+                    # Evitar duplicar conexiones en ambas direcciones
+                    if (place["name"], neighbor) not in self.connections and (neighbor, place["name"]) not in self.connections:
+                        # Coordenadas para la línea entre el nodo y su vecino
+                        start = [place["latitude"], place["longitude"]]
+                        end = [neighbor_place["latitude"], neighbor_place["longitude"]]
 
-                    # Dibujar línea con flechaH
-                    folium.PolyLine(
-                        [start, end],
-                        color="red",
-                        weight=2,
-                        opacity=0.7
-                    ).add_to(m)
-                    
-                    # Añadir el costo de la conexión
-                    mid_point = [(start[0] + end[0]) / 2, (start[1] + end[1]) / 2]
-                    folium.Marker(
-                        mid_point,
-                        icon=folium.DivIcon(html=f'<div style="font-size: 10pt; color: black;">{cost}</div>')
-                    ).add_to(m)
+                        # Dibujar línea con flecha
+                        folium.PolyLine(
+                            [start, end],
+                            color="red",
+                            weight=2,
+                            opacity=0.7
+                        ).add_to(m)
+
+                        # Añadir el costo de la conexión
+                        mid_point = [(start[0] + end[0]) / 2, (start[1] + end[1]) / 2]
+                        folium.Marker(
+                            mid_point,
+                            icon=folium.DivIcon(html=f'<div style="font-size: 10pt; color: black;">{cost}</div>')
+                        ).add_to(m)
+
+                        # Marcar esta conexión como procesada en ambas direcciones
+                        self.connections.add((place["name"], neighbor))
+                        self.connections.add((neighbor, place["name"]))
+                else:
+                    print(f"Advertencia: Vecino '{neighbor}' de '{place['name']}' no encontrado en datos.")
 
         return m
 
