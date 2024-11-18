@@ -1,14 +1,28 @@
 import json
 import folium
+from typing import List, Dict, Tuple, Any, Set
 
 class MapVisualizer:
-    def __init__(self, file_path):
-        self.file_path = file_path
-        self.places = []
-        self.connections = set()  # Para rastrear las conexiones ya trazadas
+    def __init__(self, file_path: str) -> None:
+        """
+        Initialize the MapVisualizer with the JSON file path.
 
-    def load_data(self):
-        """Carga los datos del archivo JSON y los guarda en la lista de lugares."""
+        Args:
+            file_path (str): Path to the JSON file containing network data.
+        """
+        self.file_path: str = file_path
+        self.places: List[Dict[str, Any]] = []
+        self.connections: Set[Tuple[str, str]] = set()  # Tracks already drawn connections
+
+    def load_data(self) -> None:
+        """
+        Loads data from the JSON file and processes it into a list of places.
+        
+        Each place includes:
+        - Name
+        - Latitude and Longitude
+        - Connections with neighbors and associated costs
+        """
         with open(self.file_path, 'r') as file:
             data = json.load(file)
 
@@ -17,9 +31,8 @@ class MapVisualizer:
             latitude = place_data['Latitude']
             longitude = place_data['Longitude']
             
-            # Procesar vecinos y costos
-            neighbors = place_data['Neighbors']  # Ya es una lista
-            costs = place_data['Cost']  # Ya es una lista
+            neighbors = place_data['Neighbors']  # List of neighbor names
+            costs = place_data['Cost']  # List of costs to neighbors
             
             connections = [
                 (neighbor, cost) 
@@ -33,36 +46,60 @@ class MapVisualizer:
                 "connections": connections
             })
 
-    def create_map(self):
-        """Crea y retorna un objeto de mapa `folium` con los lugares y sus conexiones."""
-        if not self.places:
-            raise ValueError("No hay datos cargados. Ejecute load_data() primero.")
+    def get_marker_color(self, name: str) -> str:
+        """
+        Determines the marker color based on the name of the place.
 
-        # Centrar el mapa en la primera ubicación
+        Args:
+            name (str): Name of the place.
+
+        Returns:
+            str: Color for the marker.
+        """
+        if name in ["BBVA", "Azteca", "Akron"]:
+            return "orange"
+        elif name.startswith("Planta"):
+            return "green"
+        elif name.startswith("Distribuidora"):
+            return "blue"
+        else:
+            return "gray"  # Default color for unknown places
+
+    def create_map(self) -> folium.Map:
+        """
+        Creates and returns a folium map object with the loaded places and their connections.
+
+        Raises:
+            ValueError: If no data is loaded.
+
+        Returns:
+            folium.Map: A folium map object with markers and connections.
+        """
+        if not self.places:
+            raise ValueError("No data loaded. Please run load_data() first.")
+
+        # Center the map on the first location
         m = folium.Map(location=[self.places[0]["latitude"], self.places[0]["longitude"]], zoom_start=6)
 
-        # Añadir marcadores para cada lugar
+        # Add markers for each place
         for place in self.places:
+            color = self.get_marker_color(place["name"])
             folium.Marker(
                 [place["latitude"], place["longitude"]],
                 popup=place["name"],
                 tooltip=place["name"],
-                icon=folium.Icon(color="blue")
+                icon=folium.Icon(color=color)
             ).add_to(m)
 
-        # Añadir líneas y etiquetas para cada conexión
+        # Add lines and labels for each connection
         for place in self.places:
             for neighbor, cost in place["connections"]:
-                # Verificar si el vecino existe en la lista
                 neighbor_place = next((p for p in self.places if p["name"] == neighbor), None)
                 if neighbor_place:
-                    # Evitar duplicar conexiones en ambas direcciones
                     if (place["name"], neighbor) not in self.connections and (neighbor, place["name"]) not in self.connections:
-                        # Coordenadas para la línea entre el nodo y su vecino
                         start = [place["latitude"], place["longitude"]]
                         end = [neighbor_place["latitude"], neighbor_place["longitude"]]
 
-                        # Dibujar línea con flecha
                         folium.PolyLine(
                             [start, end],
                             color="red",
@@ -70,29 +107,33 @@ class MapVisualizer:
                             opacity=0.7
                         ).add_to(m)
 
-                        # Añadir el costo de la conexión
                         mid_point = [(start[0] + end[0]) / 2, (start[1] + end[1]) / 2]
                         folium.Marker(
                             mid_point,
                             icon=folium.DivIcon(html=f'<div style="font-size: 10pt; color: black;">{cost}</div>')
                         ).add_to(m)
 
-                        # Marcar esta conexión como procesada en ambas direcciones
                         self.connections.add((place["name"], neighbor))
                         self.connections.add((neighbor, place["name"]))
                 else:
-                    print(f"Advertencia: Vecino '{neighbor}' de '{place['name']}' no encontrado en datos.")
+                    print(f"Warning: Neighbor '{neighbor}' of '{place['name']}' not found in data.")
 
         return m
 
-    def save_map(self, file_name="../images/network_map.html"):
-        """Guarda el mapa en un archivo HTML."""
+    def save_map(self, file_name: str = "../images/network_map.html") -> None:
+        """
+        Saves the map to an HTML file.
+
+        Args:
+            file_name (str): The path and name of the output HTML file.
+        """
         network_map = self.create_map()
         network_map.save(file_name)
-        print(f"Mapa guardado como {file_name}")
+        print(f"Map saved as {file_name}")
 
-# Ejemplo de uso
+# Example usage
 if __name__ == "__main__":
-    visualizer = MapVisualizer("archivo.json")  # Reemplaza con la ruta a tu archivo JSON
+    visualizer = MapVisualizer("archivo.json")
     visualizer.load_data()
     visualizer.save_map("network_map.html")
+

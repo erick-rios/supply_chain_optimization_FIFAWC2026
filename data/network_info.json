@@ -3,40 +3,31 @@
       "Name": "BBVA",
       "Latitude": 25.6689,
       "Longitude": -100.3105,
-      "Neighbors": [
-        "Distribuidora6",
-        "Distribuidora12",
-        "Distribuidora15"
-      ],
-      "Cost": [
-        20,
-        40,
-        35
-      ]
+      "Neighbors": [],
+      "Cost": []
     },
     {
       "Name": "Azteca",
       "Latitude": 19.3029,
       "Longitude": -99.1505,
-      "Neighbors": [
-        "Distribuidora20",
-        "Distribuidora25",
-        "Distribuidora30"
-      ],
-      "Cost": [
-        25,
-        45,
-        30
-      ]
+      "Neighbors": [],
+      "Cost": []
     },
     {
-      "Name": "Planta1",
+      "Name": "Akron",
+      "Latitude": 20.6758,
+      "Longitude": -103.4443,
+      "Neighbors": [],
+      "Cost": []
+    },
+    {
+      "Name": "Planta_Modelo",
       "Latitude": 21.8818,
       "Longitude": -102.2916,
       "Neighbors": [
-        "Distribuidora1",
-        "Distribuidora2",
-        "Distribuidora3"
+        "Distribuidora_Norteña",
+        "Distribuidora_Bajio_Express",
+        "Distribuidora_Golfo"
       ],
       "Cost": [
         10,
@@ -45,13 +36,13 @@
       ]
     },
     {
-      "Name": "Planta2",
+      "Name": "Planta_Corona",
       "Latitude": 25.4232,
       "Longitude": -101,
       "Neighbors": [
-        "Distribuidora4",
-        "Distribuidora5",
-        "Distribuidora6"
+        "Distribuidora_Maya",
+        "Distribuidora_Zapoteca",
+        "Distribuidora_Azteca_Logistica"
       ],
       "Cost": [
         12,
@@ -60,13 +51,13 @@
       ]
     },
     {
-      "Name": "Planta3",
+      "Name": "Planta_Moctezuma",
       "Latitude": 19.7002,
       "Longitude": -101.1844,
       "Neighbors": [
-        "Distribuidora7",
-        "Distribuidora8",
-        "Distribuidora9"
+        "Distribuidora_Yucateca",
+        "Distribuidora_Pacifico_Norte",
+        "Distribuidora_Sierra_Madre"
       ],
       "Cost": [
         8,
@@ -75,13 +66,13 @@
       ]
     },
     {
-      "Name": "Planta4",
+      "Name": "Planta_Carta_Blanca",
       "Latitude": 17.7831,
       "Longitude": -97.5044,
       "Neighbors": [
-        "Distribuidora10",
-        "Distribuidora11",
-        "Distribuidora12"
+        "Distribuidora_Huasteca",
+        "Distribuidora_Tolteca",
+        "Distribuidora_Chapultepec"
       ],
       "Cost": [
         14,
@@ -90,13 +81,13 @@
       ]
     },
     {
-      "Name": "Planta5",
+      "Name": "Planta_Budweiser",
       "Latitude": 24.0092,
       "Longitude": -104.6664,
       "Neighbors": [
-        "Distribuidora13",
-        "Distribuidora14",
-        "Distribuidora15"
+        "Distribuidora_Mezquital",
+        "Distribuidora_Riviera",
+        "Distribuidora_Lago_Chapala"
       ],
       "Cost": [
         20,
@@ -105,13 +96,13 @@
       ]
     },
     {
-      "Name": "Planta6",
+      "Name": "Planta_Tecate",
       "Latitude": 22.1461,
       "Longitude": -100.9764,
       "Neighbors": [
-        "Distribuidora16",
-        "Distribuidora17",
-        "Distribuidora18"
+        "Distribuidora_Wolcan",
+        "Distribuidora_Teotihuacan",
+        "Distribuidora_Mixteca"
       ],
       "Cost": [
         15,
@@ -120,13 +111,13 @@
       ]
     },
     {
-      "Name": "Planta7",
+      "Name": "Planta_Bud_Light",
       "Latitude": 20.5895,
       "Longitude": -100.3899,
       "Neighbors": [
-        "Distribuidora19",
-        "Distribuidora20",
-        "Distribuidora21"
+        "Distribuidora_Nayar",
+        "Distribuidora_Tarahumara",
+        "Distribuidora_Queretaro_Logistica"
       ],
       "Cost": [
         12,
@@ -135,13 +126,13 @@
       ]
     },
     {
-      "Name": "Planta8",
+      "Name": "Planta_Brahma",
       "Latitude": 18.6813,
       "Longitude": -97.1515,
       "Neighbors": [
-        "Distribuidora22",
-        "Distribuidora23",
-        "Distribuidora24"
+        "Distribuidora_Chiapas_Express",
+        "Distribuidora_Sonorense",
+        "Distribuidora_Jalisciense"
       ],
       "Cost": [
         10,
@@ -150,13 +141,13 @@
       ]
     },
     {
-      "Name": "Planta9",
+      "Name": "Planta_Kirin",
       "Latitude": 20.5597,
       "Longitude": -100.3792,
       "Neighbors": [
-        "Distribuidora25",
-        "Distribuidora26",
-        "Distribuidora27"
+        "Distribuidora_Veracruzana",
+        "Distribuidora_Michoacana",
+        "Distribuidora_Puebla_Delivery"
       ],
       "Cost": [
         13,
@@ -165,13 +156,13 @@
       ]
     },
     {
-      "Name": "Planta10",
+      "Name": "Planta_Skol",
       "Latitude": 19.4332,
       "Longitude": -99.1332,
       "Neighbors": [
-        "Distribuidora28",
-        "Distribuidora29",
-        "Distribuidora30"
+        "Distribuidora_Coahuila",
+        "Distribuidora_Hermosillo_Express",
+        "Distribuidora_Peninsula"
       ],
       "Cost": [
         11,
@@ -180,13 +171,13 @@
       ]
     },
     {
-      "Name": "Distribuidora1",
+      "Name": "Distribuidora_Norteña",
       "Latitude": 21.1518,
       "Longitude": -101.7116,
       "Neighbors": [
         "Akron",
-        "Planta1",
-        "Distribuidora2"
+        "Planta_Modelo",
+        "Distribuidora_Bajio_Express"
       ],
       "Cost": [
         15,
@@ -195,13 +186,13 @@
       ]
     },
     {
-      "Name": "Distribuidora2",
+      "Name": "Distribuidora_Bajio_Express",
       "Latitude": 22.7709,
       "Longitude": -102.5832,
       "Neighbors": [
-        "Planta1",
-        "Distribuidora1",
-        "Distribuidora3"
+        "Planta_Modelo",
+        "Distribuidora_Norteña",
+        "Distribuidora_Golfo"
       ],
       "Cost": [
         5,
@@ -210,13 +201,13 @@
       ]
     },
     {
-      "Name": "Distribuidora3",
+      "Name": "Distribuidora_Golfo",
       "Latitude": 20.5895,
       "Longitude": -100.3899,
       "Neighbors": [
-        "Planta1",
-        "Distribuidora2",
-        "Distribuidora4"
+        "Planta_Modelo",
+        "Distribuidora_Bajio_Express",
+        "Distribuidora_Maya"
       ],
       "Cost": [
         8,
@@ -225,13 +216,13 @@
       ]
     },
     {
-      "Name": "Distribuidora4",
+      "Name": "Distribuidora_Maya",
       "Latitude": 24.1422,
       "Longitude": -101.2078,
       "Neighbors": [
-        "Planta2",
-        "Distribuidora3",
-        "Distribuidora5"
+        "Planta_Corona",
+        "Distribuidora_Golfo",
+        "Distribuidora_Zapoteca"
       ],
       "Cost": [
         10,
@@ -240,13 +231,13 @@
       ]
     },
     {
-      "Name": "Distribuidora5",
+      "Name": "Distribuidora_Zapoteca",
       "Latitude": 22.2371,
       "Longitude": -97.8419,
       "Neighbors": [
         "Akron",
-        "Planta2",
-        "Distribuidora6"
+        "Planta_Corona",
+        "Distribuidora_Azteca_Logistica"
       ],
       "Cost": [
         30,
@@ -255,13 +246,13 @@
       ]
     },
     {
-      "Name": "Distribuidora6",
+      "Name": "Distribuidora_Azteca_Logistica",
       "Latitude": 25.1003,
       "Longitude": -100.3166,
       "Neighbors": [
         "BBVA",
-        "Planta2",
-        "Distribuidora5"
+        "Planta_Corona",
+        "Distribuidora_Zapoteca"
       ],
       "Cost": [
         20,
@@ -270,13 +261,13 @@
       ]
     },
     {
-      "Name": "Distribuidora7",
+      "Name": "Distribuidora_Yucateca",
       "Latitude": 20.9575,
       "Longitude": -89.6222,
       "Neighbors": [
-        "Planta3",
-        "Distribuidora8",
-        "Distribuidora9"
+        "Planta_Moctezuma",
+        "Distribuidora_Pacifico_Norte",
+        "Distribuidora_Sierra_Madre"
       ],
       "Cost": [
         8,
@@ -285,13 +276,13 @@
       ]
     },
     {
-      "Name": "Distribuidora8",
+      "Name": "Distribuidora_Pacifico_Norte",
       "Latitude": 18.6575,
       "Longitude": -91.8301,
       "Neighbors": [
-        "Planta3",
-        "Distribuidora7",
-        "Distribuidora9"
+        "Planta_Moctezuma",
+        "Distribuidora_Yucateca",
+        "Distribuidora_Sierra_Madre"
       ],
       "Cost": [
         12,
@@ -300,13 +291,13 @@
       ]
     },
     {
-      "Name": "Distribuidora9",
+      "Name": "Distribuidora_Sierra_Madre",
       "Latitude": 19.9032,
       "Longitude": -98.9553,
       "Neighbors": [
-        "Planta3",
-        "Distribuidora7",
-        "Distribuidora8"
+        "Planta_Moctezuma",
+        "Distribuidora_Yucateca",
+        "Distribuidora_Pacifico_Norte"
       ],
       "Cost": [
         9,
@@ -315,28 +306,13 @@
       ]
     },
     {
-      "Name": "Akron",
-      "Latitude": 20.6758,
-      "Longitude": -103.4443,
-      "Neighbors": [
-        "Distribuidora1",
-        "Distribuidora5",
-        "Distribuidora10"
-      ],
-      "Cost": [
-        15,
-        30,
-        25
-      ]
-    },
-    {
-      "Name": "Distribuidora10",
+      "Name": "Distribuidora_Huasteca",
       "Latitude": 29.4486,
       "Longitude": -90.5424,
       "Neighbors": [
-        "Planta1",
-        "Planta9",
-        "Distribuidora16"
+        "Planta_Modelo",
+        "Planta_Kirin",
+        "Distribuidora_Wolcan"
       ],
       "Cost": [
         17,
@@ -345,12 +321,12 @@
       ]
     },
     {
-      "Name": "Distribuidora11",
+      "Name": "Distribuidora_Tolteca",
       "Latitude": 23.2013,
       "Longitude": -109.9238,
       "Neighbors": [
-        "Planta10",
-        "Distribuidora9"
+        "Planta_Skol",
+        "Distribuidora_Sierra_Madre"
       ],
       "Cost": [
         18,
@@ -358,13 +334,26 @@
       ]
     },
     {
-      "Name": "Distribuidora13",
-      "Latitude": 20.4497,
-      "Longitude": -116.1433,
+      "Name": "Distribuidora_Chapultepec",
+      "Latitude": 23.2013,
+      "Longitude": -109.9238,
       "Neighbors": [
-        "Distribuidora14",
-        "Planta9",
-        "Distribuidora2"
+        "Planta_Kirin",
+        "Distribuidora_Lago_Chapala"
+      ],
+      "Cost": [
+        18,
+        45
+      ]
+    },
+    {
+      "Name": "Distribuidora_Mezquital",
+      "Latitude": 20.4497,
+      "Longitude": -86.1433,
+      "Neighbors": [
+        "Distribuidora_Riviera",
+        "Planta_Kirin",
+        "Distribuidora_Bajio_Express"
       ],
       "Cost": [
         26,
@@ -373,14 +362,14 @@
       ]
     },
     {
-      "Name": "Distribuidora14",
+      "Name": "Distribuidora_Riviera",
       "Latitude": 14.8976,
       "Longitude": -86.9146,
       "Neighbors": [
-        "Distribuidora25",
-        "Planta8",
+        "Distribuidora_Veracruzana",
+        "Planta_Brahma",
         "Azteca",
-        "Planta2"
+        "Planta_Corona"
       ],
       "Cost": [
         33,
@@ -390,13 +379,26 @@
       ]
     },
     {
-      "Name": "Distribuidora16",
+      "Name": "Distribuidora_Lago_Chapala",
+      "Latitude": 17.2398,
+      "Longitude": -86.349,
+      "Neighbors": [
+        "Planta_Budweiser",
+        "Akron"
+      ],
+      "Cost": [
+        49,
+        30
+      ]
+    },
+    {
+      "Name": "Distribuidora_Wolcan",
       "Latitude": 25.6464,
       "Longitude": -106.7358,
       "Neighbors": [
-        "Planta4",
-        "Distribuidora30",
-        "Distribuidora4"
+        "Planta_Carta_Blanca",
+        "Distribuidora_Peninsula",
+        "Distribuidora_Maya"
       ],
       "Cost": [
         32,
@@ -405,12 +407,12 @@
       ]
     },
     {
-      "Name": "Distribuidora17",
+      "Name": "Distribuidora_Teotihuacan",
       "Latitude": 14.9498,
       "Longitude": -99.9679,
       "Neighbors": [
-        "Distribuidora12",
-        "Distribuidora24"
+        "Distribuidora_Chapultepec",
+        "Distribuidora_Jalisciense"
       ],
       "Cost": [
         32,
@@ -418,14 +420,14 @@
       ]
     },
     {
-      "Name": "Distribuidora18",
+      "Name": "Distribuidora_Mixteca",
       "Latitude": 26.899,
       "Longitude": -100.1077,
       "Neighbors": [
-        "Distribuidora20",
-        "Distribuidora5",
-        "Distribuidora21",
-        "Distribuidora11"
+        "Distribuidora_Tarahumara",
+        "Distribuidora_Zapoteca",
+        "Distribuidora_Queretaro_Logistica",
+        "Distribuidora_Tolteca"
       ],
       "Cost": [
         33,
@@ -435,12 +437,12 @@
       ]
     },
     {
-      "Name": "Distribuidora19",
-      "Latitude": 20.9135,
+      "Name": "Distribuidora_Nayar",
+      "Latitude": 30.9135,
       "Longitude": -108.5086,
       "Neighbors": [
-        "Planta4",
-        "Distribuidora2"
+        "Planta_Carta_Blanca",
+        "Distribuidora_Bajio_Express"
       ],
       "Cost": [
         34,
@@ -448,12 +450,25 @@
       ]
     },
     {
-      "Name": "Distribuidora21",
+      "Name": "Distribuidora_Tarahumara",
+      "Latitude": 17.8798,
+      "Longitude": -114.6238,
+      "Neighbors": [
+        "Azteca",
+        "Distribuidora_Zapoteca"
+      ],
+      "Cost": [
+        35,
+        18
+      ]
+    },
+    {
+      "Name": "Distribuidora_Queretaro_Logistica",
       "Latitude": 31.9433,
       "Longitude": -106.008,
       "Neighbors": [
-        "Distribuidora10",
-        "Distribuidora18"
+        "Distribuidora_Huasteca",
+        "Distribuidora_Mixteca"
       ],
       "Cost": [
         34,
@@ -461,11 +476,11 @@
       ]
     },
     {
-      "Name": "Distribuidora22",
+      "Name": "Distribuidora_Chiapas_Express",
       "Latitude": 17.2398,
       "Longitude": -86.349,
       "Neighbors": [
-        "Planta5",
+        "Planta_Budweiser",
         "Akron"
       ],
       "Cost": [
@@ -474,12 +489,12 @@
       ]
     },
     {
-      "Name": "Distribuidora23",
+      "Name": "Distribuidora_Sonorense",
       "Latitude": 26.935,
       "Longitude": -97.6238,
       "Neighbors": [
-        "Distribuidora5",
-        "Distribuidora21"
+        "Distribuidora_Zapoteca",
+        "Distribuidora_Queretaro_Logistica"
       ],
       "Cost": [
         31,
@@ -487,12 +502,12 @@
       ]
     },
     {
-      "Name": "Distribuidora24",
+      "Name": "Distribuidora_Jalisciense",
       "Latitude": 17.8798,
-      "Longitude": -114.6238,
+      "Longitude": -94.6238,
       "Neighbors": [
         "Azteca",
-        "Distribuidora5"
+        "Distribuidora_Zapoteca"
       ],
       "Cost": [
         35,
@@ -500,11 +515,24 @@
       ]
     },
     {
-      "Name": "Distribuidora26",
+      "Name": "Distribuidora_Veracruzana",
+      "Latitude": 17.2398,
+      "Longitude": -86.349,
+      "Neighbors": [
+        "Planta_Budweiser",
+        "Akron"
+      ],
+      "Cost": [
+        49,
+        30
+      ]
+    },
+    {
+      "Name": "Distribuidora_Michoacana",
       "Latitude": 15.1839,
       "Longitude": -105.1237,
       "Neighbors": [
-        "Distribuidora3",
+        "Distribuidora_Golfo",
         "BBVA"
       ],
       "Cost": [
@@ -513,12 +541,12 @@
       ]
     },
     {
-      "Name": "Distribuidora27",
+      "Name": "Distribuidora_Puebla_Delivery",
       "Latitude": 29.5632,
       "Longitude": -116.1603,
       "Neighbors": [
         "BBVA",
-        "Planta6"
+        "Planta_Tecate"
       ],
       "Cost": [
         25,
@@ -526,14 +554,14 @@
       ]
     },
     {
-      "Name": "Distribuidora28",
+      "Name": "Distribuidora_Coahuila",
       "Latitude": 31.8205,
       "Longitude": -102.3552,
       "Neighbors": [
-        "Planta3",
-        "Distribuidora29",
-        "Distribuidora6",
-        "Distribuidora10"
+        "Planta_Moctezuma",
+        "Distribuidora_Hermosillo_Express",
+        "Distribuidora_Azteca_Logistica",
+        "Distribuidora_Huasteca"
       ],
       "Cost": [
         44,
@@ -543,20 +571,33 @@
       ]
     },
     {
-      "Name": "Distribuidora29",
-      "Latitude": 15.4571,
+      "Name": "Distribuidora_Hermosillo_Express",
+      "Latitude": 20.4571,
       "Longitude": -101.5471,
       "Neighbors": [
-        "Distribuidora27",
+        "Distribuidora_Puebla_Delivery",
         "Azteca",
-        "Distribuidora12",
-        "Planta3"
+        "Distribuidora_Chapultepec",
+        "Planta_Moctezuma"
       ],
       "Cost": [
         49,
         39,
         42,
         49
+      ]
+    },
+    {
+      "Name": "Distribuidora_Peninsula",
+      "Latitude": 17.2398,
+      "Longitude": -86.349,
+      "Neighbors": [
+        "Planta_Budweiser",
+        "Akron"
+      ],
+      "Cost": [
+        49,
+        30
       ]
     }
   ]
