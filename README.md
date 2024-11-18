@@ -2,6 +2,9 @@
 
 This project is designed to optimize beer supply to the stadiums hosting the FIFA World Cup 2026 in Mexico. It leverages Dijkstra's algorithm to find the shortest paths between nodes in a network comprising breweries, distributors, and stadiums.
 
+![Network Map Preview](images/Screenshot%20from%202024-11-09%2022-42-04.png)
+
+
 ## Table of Contents
 
 1. [Description](#description)
@@ -10,8 +13,7 @@ This project is designed to optimize beer supply to the stadiums hosting the FIF
 4. [Installation](#installation)
 5. [Usage](#usage)
 6. [Visualization](#visualization)
-7. [Testing](#testing)
-8. [Contributions](#contributions)
+
 9. [License](#license)
 
 ## Description
@@ -49,7 +51,7 @@ The main objective is to build an efficient tool to calculate optimal routes and
 - Python libraries:
     - folium
     - networkx
-    -json
+    - json
 
 Install the dependencies with 
 
@@ -61,7 +63,7 @@ pip install -r requirements.txt
 
 - **Clone this repository:**
 ```bash
-    git clone https://github.com/erick-rios/supply_chain_optimization_FIFAWC2026/
+git clone https://github.com/erick-rios/supply_chain_optimization_FIFAWC2026/
 ```
 - **Navigate to the project directory:**
 ```bash
@@ -71,3 +73,25 @@ cd route-optimization
 ```bash
 pip install -r requirements.txt
 ```
+
+## Usage
+
+- Ensure the `netwokr_info.json` file is in the `data/` directory with the network details
+- Run the main script `main.py` using the following command:
+```bash
+python -m src.main data/network_info.json <start_node> <end_node>
+```
+- For example:
+```bash
+python src/main.py data/network_info.json "Planta_Budweiser" "Azteca Stadium"
+```
+- The interactive map will be saved as `network_map.html`in the root directory.
+
+## Visualization
+
+The file `network_map.html` contains an interactive map generated with `folium`. Open this file in your browser to explore the network and its connections.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
