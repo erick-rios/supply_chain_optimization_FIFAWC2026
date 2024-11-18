@@ -76,7 +76,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-- Ensure the `netwokr_info.json` file is in the `data/` directory with the network details
+- Ensure the `network_info.json` file is in the `data/` directory with the network details
 - Run the main script `main.py` using the following command:
 ```bash
 python -m src.main data/network_info.json <start_node> <end_node>
