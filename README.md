@@ -2,7 +2,7 @@
 
 This project is designed to optimize beer supply to the stadiums hosting the FIFA World Cup 2026 in Mexico. It leverages Dijkstra's algorithm to find the shortest paths between nodes in a network comprising breweries, distributors, and stadiums.
 
-![Network Map Preview](images/Screenshot%20from%202024-11-09%2022-42-04.png)
+![Network Map Preview](images/Screenshot%202024-11-18%20at%2014-53-23%20.png)
 
 
 ## Table of Contents
